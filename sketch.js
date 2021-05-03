@@ -17,5 +17,10 @@ function draw() {
     fill(mouseX,mouseY);
   rect(motion,100,150,175);
   circle(motion+85,100,100);
-
+  if (motion>300){
+    motion=0
+  }else{
+    motion=motion+1;
+  }
+  
 }
